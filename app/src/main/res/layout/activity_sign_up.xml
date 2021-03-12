@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linear_sign_up_height"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/img_btn_title_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_baseline_close_24" />
+
+            <TextView
+                android:id="@+id/tv_title_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/sign_up_tv_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_title_sign_up" />
+
+        </LinearLayout>
+
+        <!-- Contetn -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/linear_enter_info_padding">
+
+            <!-- Enter User info  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_nick_name_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom_enter_info"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/sign_up_nick_name" />
+
+                <EditText
+                    android:id="@+id/et_nick_name_enter_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom_enter_info"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="10dp"
+
+                    android:hint="@string/sign_up_enter_email" />
+
+                <EditText
+                    android:id="@+id/et_nick_name_enter_pw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom_enter_info"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="10dp"
+
+                    android:hint="@string/sign_up_enter_pw" />
+
+                <EditText
+                    android:id="@+id/et_nick_name_re_enter_pw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/sign_up_re_enter_pw" />
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/img_btn_log_in"
+                android:layout_width="@dimen/btn_sign_up_weight"
+                android:layout_height="@dimen/btn_sign_up_height"
+                android:layout_gravity="center"
+                android:background="@drawable/group_8" />
+
+            <TextView
+                android:id="@+id/tv_log_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/sign_up_tv_personal_information"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/tv_personal_sign_up" />
+            <!--        폰트파일 달라고 하기!-->
+            <!--        android:fontFamily="@font/noto_sans_cjkkr"-->
+        </LinearLayout>
+    </LinearLayout>
+</layout>
