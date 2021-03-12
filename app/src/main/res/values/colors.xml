@@ -9,14 +9,16 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- 템플릿 -->
-    <color name="colorPrimary">#fcfcfc</color>
-    <color name="colorPrimaryDark">#889dfe</color>
+<!--    <color name="colorPrimary">#fcfcfc</color>-->
+<!--    <color name="colorPrimaryDark">#889dfe</color>-->
     <color name="colorAccent">#889dfe</color>
 
     <!-- 기본 -->
-    <color name="whiteForBackground">#FFFFFF</color>
-    <color name="blackForText">#4a4a4a</color>
-    <color name="redForText">#d9534f</color>
+<!--    <color name="whiteForBackground">#FFFFFF</color>-->
+<!--    <color name="blackForText">#4a4a4a</color>-->
+<!--    <color name="redForText">#d9534f</color>-->
+<!--    <color name="redForText2">#d9534f</color>-->
+
 
     <!-- 공통 -->
     <color name="warm_grey_radius_corner_and_tv">#979797</color>

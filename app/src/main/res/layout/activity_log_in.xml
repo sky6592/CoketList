@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="activity"
             type="com.endcorona.coketlist.ui.login.LogInActivity" />
@@ -14,8 +15,8 @@
         android:id="@+id/linear_entire_log_in"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="@color/light_purple_10"
+        android:orientation="vertical"
         android:padding="@dimen/common_padding">
 
         <!-- logo -->
@@ -61,7 +62,7 @@
                 android:paddingVertical="@dimen/radius_corner_et_padding_vertical"
                 android:textSize="@dimen/radius_corner_et_text_size" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_log_in"
                 android:layout_width="@dimen/btn_sign_up_weight"
                 android:layout_height="@dimen/btn_sign_up_height"
@@ -69,11 +70,8 @@
                 android:background="@drawable/gradient_btn_common"
                 android:fontFamily="@font/noto_sans_cjkkr_bold"
                 android:gravity="center"
-                android:onClick="@{()-> activity.onCheckLogin()}"
                 android:text="@string/log_in_gradient_btn"
                 android:textSize="@dimen/gradient_btn_text_size" />
-
-
         </LinearLayout>
 
         <!-- Bottom -->
@@ -92,11 +90,12 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/noto_sans_cjkkr_medium"
                 android:lineSpacingExtra="4sp"
+                android:text="@string/log_in_tv_sign_up"
                 android:textColor="#de000000"
                 android:textSize="14sp"
-                android:onClick="@{()->activity.onMoveSignUp()}"
-                android:textStyle="normal"
-                tools:text="@string/log_in_tv_sign_up" />
+                android:textStyle="normal" />
+            <!--            android:onClick="@{()->activity.onMoveSignUp()}"-->
+
 
             <TextView
                 android:id="@+id/tv_find_pw_sign_up"
@@ -105,15 +104,11 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/noto_sans_cjkkr_medium"
                 android:lineSpacingExtra="4sp"
+                android:text="@string/log_in_tv_find_pw"
                 android:textColor="#de000000"
                 android:textSize="14sp"
-                android:onClick="@{()->activity.onMoveFindPw()}"
-                android:textStyle="normal"
-                tools:text="@string/log_in_tv_find_pw" />
-
-
+                android:textStyle="normal" />
+            <!--            android:onClick="@{()->activity.onMoveFindPw()}"-->
         </LinearLayout>
-
-
     </LinearLayout>
 </layout>

@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.endcorona.coketlist.databinding.ItemRvCardviewBinding
+import com.endcorona.coketlist.databinding.ItemRvCardviewSpaceBinding
 import com.endcorona.coketlist.models.space.SpaceModel
 
 /*
@@ -21,7 +21,7 @@ class SpaceAdapter(val spaceModelList: ArrayList<SpaceModel>) :
         parent: ViewGroup,
         viewType: Int
     ): SpaceViewHolder {
-        val binding = ItemRvCardviewBinding.inflate(
+        val binding = ItemRvCardviewSpaceBinding.inflate(
             LayoutInflater.from(parent.context), parent, false
         )
         return SpaceViewHolder(binding)
@@ -37,7 +37,7 @@ class SpaceAdapter(val spaceModelList: ArrayList<SpaceModel>) :
 
     //View Holder
     class SpaceViewHolder(
-        private val binding: ItemRvCardviewBinding
+        private val binding: ItemRvCardviewSpaceBinding
     ) : RecyclerView.ViewHolder(
         binding.root
     ) {

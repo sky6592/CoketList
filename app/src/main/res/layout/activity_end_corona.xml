@@ -58,7 +58,7 @@
             android:focusedMonthDateColor="@color/light_purple"
             android:unfocusedMonthDateColor="@color/white" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_log_in"
             android:layout_width="@dimen/btn_sign_up_weight"
             android:layout_height="@dimen/btn_sign_up_height"

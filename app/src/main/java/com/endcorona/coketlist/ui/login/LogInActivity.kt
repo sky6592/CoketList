@@ -1,20 +1,25 @@
 package com.endcorona.coketlist.ui.login
 
 import android.content.Intent
+import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.endcorona.coketlist.R
+import com.endcorona.coketlist.config.BaseActivity
 import com.endcorona.coketlist.databinding.ActivityLogInBinding
 import com.endcorona.coketlist.ui.findpw.FindPwActivity
 import com.endcorona.coketlist.ui.signup.SignUpActivity
 
-class LogInActivity : AppCompatActivity() {
+//BaseActivity<ActivityLogInBinding>(ActivityLogInBinding:: inflate)
+class LogInActivity :  AppCompatActivity(){
     private lateinit var mBinding: ActivityLogInBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_log_in)
         mBinding.activity = this
+
+        mBinding.btnLogIn.setBackgroundResource(R.drawable.gradient_btn_common)
     }
 
     fun onCheckLogin() {

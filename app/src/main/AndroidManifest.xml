@@ -11,7 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Coketlist">
         <activity android:name=".ui.endcorona.EndCoronaActivity"></activity>
-        <activity android:name=".ui.findpw.TempoNumActivity" />
+        <activity android:name=".ui.findpw.TempoNumActivity">
+
+        </activity>
         <activity android:name=".ui.mycoket.WriteListActivity" />
         <activity android:name=".ui.findpw.EnterChangePwActivity" />
         <activity android:name=".ui.findpw.FindPwActivity" />
@@ -22,7 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.signup.SignUpActivity" />
+        <activity android:name=".ui.signup.SignUpActivity">
+
+        </activity>
         <activity android:name=".MainActivity">
 
         </activity>

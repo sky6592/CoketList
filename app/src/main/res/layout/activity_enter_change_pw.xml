@@ -88,7 +88,7 @@
                 android:paddingVertical="@dimen/radius_corner_et_padding_vertical"
                 android:textSize="@dimen/radius_corner_et_text_size" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_sent_find_pw"
                 android:layout_width="@dimen/btn_sign_up_weight"
                 android:layout_height="@dimen/btn_sign_up_height"
