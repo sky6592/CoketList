@@ -29,8 +29,24 @@
     <string name="enter_email_pw_tv_info">메일에 적힌 비밀번호를 입력해주세요</string>
     <string name="enter_email_pw_gradient_btn">완료</string>
 
-<!-- menu bottom navigation -->
+    <!-- menu bottom navigation -->
     <string name="menu_coket">나의 코킷</string>
     <string name="menu_space">둘러보기</string>
+
+    <!-- Fragment Space -->
+    <string name="fragment_space_tv_content">다른 사람들의 Coket</string>
+
+    <!-- Spinner -->
+    <string name="spinner_current">최신순</string>
+    <string name="spinner_like">좋아요순</string>
+
+    <!-- Item CardView -->
+    <string name="item_cv_nick_name">닉네임</string>
+    <string name="item_cv_date">2021.01.01</string>
+    <string name="item_cv_favorite_info">공감자수</string>
+    <string name="item_cv_favorite_number">숫자</string>
+    <string name="item_cv_content">다른사람들의 Coket이 보여진다</string>
+
+
 
 </resources>

@@ -10,7 +10,7 @@
     <dimen name="title_and_btn_margin_bottom_sign_up_and_log_in">40dp</dimen>
 
     <!-- Common radius corner -->
-    <dimen name="radius_corner">10dp</dimen>
+    <dimen name="radius_corner_drawable_padding">10dp</dimen>
     <dimen name="radius_corner_stroke">2px</dimen>
     <dimen name="radius_corner_padding">5dp</dimen>
     <dimen name="radius_corner_margin_bottom">15dp</dimen>
@@ -36,5 +36,18 @@
 
     <!-- Find Pw -->
     <dimen name="tv_info_find_pw">20sp</dimen>
+
+    <!-- Fragment Space -->
+    <dimen name="fragment_space_tv_size">22sp</dimen>
+
+<!-- Item cardview -->
+    <dimen name="cv_elevation">3dp</dimen>
+    <dimen name="cv_radius_corner">12dp</dimen>
+    <dimen name="cv_content_padding">20dp</dimen>
+    <dimen name="cv_tv_size_nick_name">14sp</dimen>
+    <dimen name="cv_tv_size_date">12sp</dimen>
+    <dimen name="cv_margin_right_small">5dp</dimen>
+    <dimen name="cv_margin_right_common">10dp</dimen>
+
 
 </resources>

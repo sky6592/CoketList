@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+    <!-- Entire -->
     <LinearLayout
-        android:id="@+id/linear_space_fragment"
+        android:id="@+id/linear_entire_space_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@color/light_purple"
+        android:orientation="vertical"
+        android:padding="@dimen/common_padding">
 
-        <TextView
+        <!-- Top -->
+        <LinearLayout
+            android:id="@+id/lenear_top_space_fragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="둘러보기 프래그먼트"
-            android:textSize="40sp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_top_space_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_my_coket"
+                android:drawablePadding="@dimen/radius_corner_drawable_padding"
+                android:fontFamily="@font/noto_sans_cjkkr_medium"
+                android:text="@string/fragment_space_tv_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_space_tv_size" />
+
+            <!-- 화살표 세팅해야함!!! -->
+            <Spinner
+                android:id="@+id/spin_top_space_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:entries="@array/spinner_entries"
+                android:spinnerMode="dropdown" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_space_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 </layout>

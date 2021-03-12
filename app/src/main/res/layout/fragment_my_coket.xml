@@ -8,6 +8,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tv_fragment_my_coket"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"

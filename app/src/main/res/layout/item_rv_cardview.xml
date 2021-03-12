@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Entire -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_item_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/cv_radius_corner"
+        app:cardElevation="@dimen/cv_elevation"
+        app:contentPadding="@dimen/cv_content_padding">
+
+        <!-- Content -->
+        <LinearLayout
+            android:id="@+id/relative_item_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Top-->
+            <LinearLayout
+                android:id="@+id/linear_top_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 아이콘 5개 랜덤 배정해야함! -->
+                <ImageView
+                    android:id="@+id/iv_todp_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/cv_margin_right_common"
+                    android:backgroundTint="@color/main_purple"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+                    android:id="@+id/tv_top_nick_name_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/cv_margin_right_common"
+                    android:fontFamily="@font/noto_sans_cjkkr_regular"
+                    android:text="@string/item_cv_nick_name"
+                    android:textColor="@color/greyish_brown"
+                    android:textSize="@dimen/cv_tv_size_nick_name" />
+
+                <TextView
+                    android:id="@+id/tv_top_date_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/cv_margin_right_common"
+                    android:text="@string/item_cv_date"
+                    android:textColor="@color/pinkish_grey"
+                    android:textSize="@dimen/cv_tv_size_date" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!-- 신고하기 아이콘 변경 필요함! -->
+                <ImageView
+                    android:id="@+id/tv_top_warning_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/ic_baseline_warning_24" />
+
+
+            </LinearLayout>
+
+            <!-- Content -->
+            <TextView
+                android:id="@+id/tv_content_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans_cjkkr_medium"
+                android:text="@string/item_cv_content"
+                android:textColor="@color/black_87" />
+
+            <!-- Bottom -->
+            <LinearLayout
+                android:id="@+id/linear_bottom_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_heart_favorite_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/cv_margin_right_common"
+                    android:src="@drawable/ic_heart_favorite" />
+
+                <TextView
+                    android:id="@+id/tv_bottom_favorite_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/cv_margin_right_small"
+                    android:text="@string/item_cv_favorite_info"
+                    android:textColor="@color/warm_grey_radius_corner_and_tv"
+                    android:textSize="@dimen/cv_tv_size_date" />
+
+                <TextView
+                    android:id="@+id/tv_bottom_favorite_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/item_cv_favorite_number"
+                    android:textColor="@color/warm_grey_radius_corner_and_tv"
+                    android:textSize="@dimen/cv_tv_size_date" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

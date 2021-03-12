@@ -5,14 +5,14 @@
     <item
         android:id="@+id/menu_my_coket"
         android:enabled="true"
-        android:icon="@drawable/menu_navi_my_coket_selector"
+        android:icon="@drawable/selector_menu_navi_my_coket"
         android:title="@string/menu_coket"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/menu_space"
         android:enabled="true"
-        android:icon="@drawable/menu_navi_space_selector"
-        android:title="@string/menu_coket"
+        android:icon="@drawable/selector_menu_navi_space"
+        android:title="@string/menu_space"
         app:showAsAction="ifRoom" />
 </menu>

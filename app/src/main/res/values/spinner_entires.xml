@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_entries">
+        <item>@string/spinner_current</item>
+        <item>@string/spinner_like</item>
+    </string-array>
+</resources>
