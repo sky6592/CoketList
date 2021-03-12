@@ -2,6 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+
+        <variable
+            name="spaceData"
+            type="com.endcorona.coketlist.models.space.SpaceModel" />
+    </data>
+
     <!-- Entire -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_item_rv"
@@ -33,7 +40,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginRight="@dimen/cv_margin_right_common"
                     android:backgroundTint="@color/main_purple"
-                    android:src="@drawable/ic_person" />
+                    android:src="@{spaceData.ivIcon}" />
 
                 <TextView
                     android:id="@+id/tv_top_nick_name_item"
@@ -42,7 +49,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginRight="@dimen/cv_margin_right_common"
                     android:fontFamily="@font/noto_sans_cjkkr_regular"
-                    android:text="@string/item_cv_nick_name"
+                    android:text="@{spaceData.tvNickname}"
                     android:textColor="@color/greyish_brown"
                     android:textSize="@dimen/cv_tv_size_nick_name" />
 
@@ -52,7 +59,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginRight="@dimen/cv_margin_right_common"
-                    android:text="@string/item_cv_date"
+                    android:text="@{spaceData.tvDate}"
                     android:textColor="@color/pinkish_grey"
                     android:textSize="@dimen/cv_tv_size_date" />
 
@@ -78,7 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/noto_sans_cjkkr_medium"
-                android:text="@string/item_cv_content"
+                android:text="@{spaceData.tvContent}"
                 android:textColor="@color/black_87" />
 
             <!-- Bottom -->
@@ -110,7 +117,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/item_cv_favorite_number"
+                    android:text="@{Integer.toString(spaceData.tvFavoriteNumber)}"
                     android:textColor="@color/warm_grey_radius_corner_and_tv"
                     android:textSize="@dimen/cv_tv_size_date" />
             </LinearLayout>
