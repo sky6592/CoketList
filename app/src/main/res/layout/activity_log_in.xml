@@ -3,12 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="activity"
+            type="com.endcorona.coketlist.ui.login.LogInActivity" />
+    </data>
+
     <!-- Entire -->
     <LinearLayout
         android:id="@+id/linear_entire_log_in"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/light_purple_10"
         android:padding="@dimen/common_padding">
 
         <!-- logo -->
@@ -62,6 +69,7 @@
                 android:background="@drawable/gradient_btn_common"
                 android:fontFamily="@font/noto_sans_cjkkr_bold"
                 android:gravity="center"
+                android:onClick="@{()-> activity.onCheckLogin()}"
                 android:text="@string/log_in_gradient_btn"
                 android:textSize="@dimen/gradient_btn_text_size" />
 
@@ -86,6 +94,7 @@
                 android:lineSpacingExtra="4sp"
                 android:textColor="#de000000"
                 android:textSize="14sp"
+                android:onClick="@{()->activity.onMoveSignUp()}"
                 android:textStyle="normal"
                 tools:text="@string/log_in_tv_sign_up" />
 
@@ -98,6 +107,7 @@
                 android:lineSpacingExtra="4sp"
                 android:textColor="#de000000"
                 android:textSize="14sp"
+                android:onClick="@{()->activity.onMoveFindPw()}"
                 android:textStyle="normal"
                 tools:text="@string/log_in_tv_find_pw" />
 
