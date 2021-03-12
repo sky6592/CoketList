@@ -12,9 +12,4 @@
         android:bottomRightRadius="@dimen/gradient_btn_radius_corner"
         android:topLeftRadius="@dimen/gradient_btn_radius_corner"
         android:topRightRadius="@dimen/gradient_btn_radius_corner" />
-<!--    <padding-->
-<!--        android:bottom="0dip"-->
-<!--        android:left="0dip"-->
-<!--        android:right="0dip"-->
-<!--        android:top="0dip" />-->
 </shape>

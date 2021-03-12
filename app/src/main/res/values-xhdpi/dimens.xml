@@ -2,10 +2,10 @@
 <resources>
 
     <!-- Common pages -->
-    <dimen name="common_padding">20dp</dimen>
+    <dimen name="common_padding">30dp</dimen>
 
     <!-- Common title -->
-    <dimen name="title_linear_height_sign_up_">56dp</dimen>
+    <dimen name="title_linear_height_sign_up_all">60dp</dimen>
     <dimen name="title_tv_sign_up">14sp</dimen>
     <dimen name="title_and_btn_margin_bottom_sign_up_and_log_in">40dp</dimen>
 
@@ -27,7 +27,6 @@
     <dimen name="logo_margin_vertical_log_in">124dp</dimen>
 
     <!-- Sign UP-->
-
     <dimen name="tv_personal_sign_up">13sp</dimen>
     <dimen name="btn_sign_up_weight">320dp</dimen>
     <dimen name="btn_sign_up_height">44dp</dimen>
@@ -40,14 +39,27 @@
     <!-- Fragment Space -->
     <dimen name="fragment_space_tv_size">22sp</dimen>
 
-<!-- Item cardview -->
-    <dimen name="cv_elevation">3dp</dimen>
-    <dimen name="cv_radius_corner">12dp</dimen>
+    <!-- Item cardview -->
+    <dimen name="cv_elevation">10dp</dimen>
+    <dimen name="cv_radius_corner">20dp</dimen>
     <dimen name="cv_content_padding">20dp</dimen>
     <dimen name="cv_tv_size_nick_name">14sp</dimen>
     <dimen name="cv_tv_size_date">12sp</dimen>
     <dimen name="cv_margin_right_small">5dp</dimen>
     <dimen name="cv_margin_right_common">10dp</dimen>
+
+    <!-- My Coket -->
+    <dimen name="my_coket_iv_setting_margin_right">24dp</dimen>
+    <dimen name="my_coket_tv_title_hope">18sp</dimen>
+    <dimen name="my_coket_tv_title_nickname_and_info">22sp</dimen>
+    <dimen name="my_coket_tv_nickname_margin_bottom">24dp</dimen>
+
+    <!-- Write List -->
+    <dimen name="write_list_tv_size">16sp</dimen>
+
+    <!-- End Corona -->
+    <dimen name="end_corona_tv_big_size">22dp</dimen>
+    <dimen name="end_corona_tv_small_size">13dp</dimen>
 
 
 </resources>

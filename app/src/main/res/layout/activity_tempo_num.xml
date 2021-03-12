@@ -30,17 +30,17 @@
             <TextView
                 android:id="@+id/tv_title_sign_up"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/title_linear_height_sign_up_all"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:fontFamily="@font/noto_sans_cjkkr_medium"
                 android:gravity="center"
-                android:text="@string/enter_change_pw_title"
+                android:text="@string/tempo_num_title"
                 android:textColor="@color/black"
                 android:textSize="@dimen/title_tv_sign_up" />
-
         </LinearLayout>
 
+        <!-- Enter info -->
         <LinearLayout
             android:id="@+id/lenear_content_find_pw"
             android:layout_width="match_parent"
@@ -49,25 +49,26 @@
             android:paddingHorizontal="@dimen/common_padding">
 
             <TextView
-                android:id="@+id/tv_info_find_pw"
+                android:id="@+id/tv_info_enter_email_pw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginBottom="@dimen/title_and_btn_margin_bottom_sign_up_and_log_in"
                 android:fontFamily="@font/noto_sans_cjkkr_regular"
-                android:text="@string/find_pw_tv_info"
+                android:text="@string/tempo_num_email_pw_tv_info"
                 android:textColor="@color/warm_grey_radius_corner_and_tv"
                 android:textSize="@dimen/tv_info_find_pw" />
 
             <EditText
-                android:id="@+id/et_enter_email_find_pw"
+                android:id="@+id/et_enter_pw_enter_email_pw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/title_and_btn_margin_bottom_sign_up_and_log_in"
+                android:layout_marginBottom="@dimen/radius_corner_margin_bottom"
                 android:background="@drawable/radius_corner_grey_stroke"
-                android:drawableLeft="@drawable/ic_email"
+                android:drawableLeft="@drawable/ic_lock"
                 android:drawablePadding="@dimen/radius_corner_drawable_padding"
                 android:fontFamily="@font/noto_sans_cjkkr_regular"
-                android:hint="@string/sign_up_enter_email"
+                android:hint="@string/tempo_num_enter_pw"
                 android:paddingHorizontal="@dimen/radius_corner_et_padding_horizontal"
                 android:paddingVertical="@dimen/radius_corner_et_padding_vertical"
                 android:textSize="@dimen/radius_corner_et_text_size" />
@@ -78,9 +79,9 @@
                 android:layout_height="@dimen/btn_sign_up_height"
                 android:layout_gravity="center"
                 android:background="@drawable/gradient_btn_common"
-                android:text="@string/find_pw_gradient_btn"
+                android:text="@string/enter_change_pw_gradient_btn"
                 android:textSize="@dimen/gradient_btn_text_size" />
         </LinearLayout>
-
     </LinearLayout>
+
 </layout>

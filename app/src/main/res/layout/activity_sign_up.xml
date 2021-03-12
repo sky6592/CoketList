@@ -3,20 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- entire -->
+
+    <!-- Entire -->
     <LinearLayout
         android:id="@+id/linear_entire_sign_up"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="@dimen/common_padding">
+        android:background="@color/light_purple_10"
+        android:orientation="vertical">
 
         <!-- Title -->
         <LinearLayout
+            android:id="@+id/linear_title_sign_up"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/title_linear_height_sign_up_"
+            android:layout_height="@dimen/title_linear_height_sign_up_all"
             android:layout_marginBottom="@dimen/title_and_btn_margin_bottom_sign_up_and_log_in"
-            android:orientation="horizontal">
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/common_padding">
 
             <ImageButton
                 android:id="@+id/img_btn_title_sign_up"
@@ -33,7 +37,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/noto_sans_cjkkr_medium"
                 android:gravity="center"
-                android:text="@string/sign_up_tv_title"
+                android:text="@string/enter_change_pw_title"
                 android:textColor="@color/black"
                 android:textSize="@dimen/title_tv_sign_up" />
 

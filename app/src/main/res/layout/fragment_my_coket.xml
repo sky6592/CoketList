@@ -1,19 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
-        android:id="@+id/linear_my_coket_fragment"
+    <!-- Entire -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linear_entire_my_coket_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/pale_lilac"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_fragment_my_coket"
+        <!-- Top -->
+        <LinearLayout
+            android:id="@+id/linear_top_my_coket_fragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="나의 코깃 프래그먼"
-            android:textSize="40sp" />
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/common_padding"
+            android:paddingTop="@dimen/common_padding"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Settings -->
+            <LinearLayout
+                android:id="@+id/linear_setting_my_coket_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_setting_my_coket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/my_coket_iv_setting_margin_right"
+                    android:src="@drawable/ic_setting" />
+
+                <ImageView
+                    android:id="@+id/iv_add_my_coket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_add_24" />
+            </LinearLayout>
+
+            <!-- Title -->
+            <LinearLayout
+                android:id="@+id/linear_my_coket_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Hope -->
+                <TextView
+                    android:id="@+id/tv_title_hope_my_coket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/noto_sans_cjkkr_medium"
+                    android:text="(서버)200일 뒤에는"
+                    android:textColor="@color/main_purple"
+                    android:textSize="@dimen/my_coket_tv_title_hope" />
+
+                <!-- NickName + Info -->
+                <LinearLayout
+                    android:id="@+id/linear_title_nick_name_info_my_coket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_title_nick_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(서버)닉네임"
+                        android:textColor="@color/black_87"
+                        android:textSize="@dimen/my_coket_tv_title_nickname_and_info"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_title_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/my_coket_tv_nickname_margin_bottom"
+                        android:text="@string/my_coket_tv_title_info"
+                        android:textColor="@color/black_87"
+                        android:textSize="@dimen/my_coket_tv_title_nickname_and_info" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- List -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_my_coket_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="@dimen/cv_radius_corner"
+            app:cardElevation="@dimen/cv_elevation"
+            app:contentPadding="@dimen/cv_content_padding"
+            app:layout_constraintTop_toBottomOf="@id/linear_top_my_coket_fragment">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_my_coket_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/iv_planet_bottom_my_coket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_planet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

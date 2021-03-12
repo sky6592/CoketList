@@ -24,10 +24,15 @@
    </string>
     <string name="find_pw_gradient_btn">발송하기</string>
 
-    <!-- Enter Email pw -->
-    <string name="enter_email_pw_title">비밀번호 재설정</string>
-    <string name="enter_email_pw_tv_info">메일에 적힌 비밀번호를 입력해주세요</string>
-    <string name="enter_email_pw_gradient_btn">완료</string>
+    <!-- Enter Change pw -->
+    <string name="enter_change_pw_title">비밀번호 찾기</string>
+    <string name="enter_change_pw_gradient_btn">완료</string>
+    <string name="enter_change_info">비밀번호를 재설정해주세요</string>
+
+    <!-- Tempo Num -->
+    <string name="tempo_num_title">임시 번호</string>
+    <string name="tempo_num_enter_pw">임시번호를 입력해주세요</string>
+    <string name="tempo_num_email_pw_tv_info">메일에 적힌 임시 번호를 입력해주세요</string>
 
     <!-- menu bottom navigation -->
     <string name="menu_coket">나의 코킷</string>
@@ -47,6 +52,15 @@
     <string name="item_cv_favorite_number">숫자</string>
     <string name="item_cv_content">다른사람들의 Coket이 보여진다</string>
 
+    <!-- My Coket -->
+    <string name="my_coket_tv_title_info">님의 코킷리스트</string>
 
+    <!-- Write List -->
+    <string name="write_list_title">리스트 작성</string>
+    <string name="write_list_enter_content_info">코로나가 끝나면 하고 싶은 일을 추가해주세요!</string>
+
+    <!-- End Corona -->
+    <string name="end_corona_tv_big_title">‘코로나’는 언제 끝날까요?</string>
+    <string name="end_corona_tv_small_title">희망하는 날짜를 선택해주세요!</string>
 
 </resources>

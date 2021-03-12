@@ -10,6 +10,7 @@
 
     <!-- 공통 -->
     <color name="warm_grey_radius_corner_and_tv">#979797</color>
+    <color name="light_purple_10">#19dbceff</color>
 
     <!-- gradient btn -->
     <color name="light_purple">#dbceff</color>
@@ -19,5 +20,12 @@
     <color name="greyish_brown">#4f4f4f</color>
     <color name="pinkish_grey">#c4c4c4</color>
     <color name="black_87">#de000000</color>
+
+    <!-- My coket -->
+    <color name="pale_lilac">#dbceff</color>
+
+<!-- Write List -->
+    <color name="white_write_list">#f2f2f2</color>
+
 
 </resources>

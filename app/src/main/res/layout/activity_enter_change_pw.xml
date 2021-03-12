@@ -8,16 +8,17 @@
         android:id="@+id/linear_entire_find_pw"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="@dimen/common_padding">
-
+        android:background="@color/light_purple_10"
+        android:orientation="vertical">
 
         <!-- Title -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/title_linear_height_sign_up_"
+            android:layout_height="@dimen/title_linear_height_sign_up_all"
             android:layout_marginBottom="@dimen/title_and_btn_margin_bottom_sign_up_and_log_in"
-            android:orientation="horizontal">
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/common_padding">
 
             <ImageButton
                 android:id="@+id/img_btn_title_sign_up"
@@ -34,7 +35,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/noto_sans_cjkkr_medium"
                 android:gravity="center"
-                android:text="@string/enter_email_pw_title"
+                android:text="@string/enter_change_pw_title"
                 android:textColor="@color/black"
                 android:textSize="@dimen/title_tv_sign_up" />
 
@@ -45,7 +46,8 @@
             android:id="@+id/lenear_content_find_pw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/common_padding">
 
             <TextView
                 android:id="@+id/tv_info_enter_email_pw"
@@ -54,7 +56,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="@dimen/title_and_btn_margin_bottom_sign_up_and_log_in"
                 android:fontFamily="@font/noto_sans_cjkkr_regular"
-                android:text="@string/enter_email_pw_tv_info"
+                android:text="@string/tempo_num_enter_pw"
                 android:textColor="@color/warm_grey_radius_corner_and_tv"
                 android:textSize="@dimen/tv_info_find_pw" />
 
@@ -92,9 +94,9 @@
                 android:layout_height="@dimen/btn_sign_up_height"
                 android:layout_gravity="center"
                 android:background="@drawable/gradient_btn_common"
-                android:text="@string/enter_email_pw_gradient_btn"
+                android:text="@string/enter_change_pw_gradient_btn"
                 android:textSize="@dimen/gradient_btn_text_size" />
         </LinearLayout>
-
     </LinearLayout>
+
 </layout>

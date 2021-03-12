@@ -9,17 +9,16 @@ import androidx.fragment.app.Fragment
 import com.endcorona.coketlist.R
 import com.endcorona.coketlist.databinding.FragmentMyCoketBinding
 
-class MyCoketFragment : Fragment(){
+class MyCoketFragment : Fragment() {
 
-    private lateinit var mBinding:FragmentMyCoketBinding
+    private lateinit var mBinding: FragmentMyCoketBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_my_coket,container,false)
-
+        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_my_coket, container, false)
 
         return mBinding.root
     }

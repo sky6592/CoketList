@@ -32,6 +32,7 @@ class SpaceAdapter(val spaceModelList: ArrayList<SpaceModel>) :
     //when use to Scroll => 실행한다 onvBindViewHolder가!
     override fun onBindViewHolder(holder: SpaceViewHolder, position: Int) {
         holder.onBind(mData[position])
+
     }
 
     //View Holder

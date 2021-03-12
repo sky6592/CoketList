@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.endcorona.coketlist.R
 
-class EnterEmailPwActivity : AppCompatActivity() {
+class EnterChangePwActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_enter_email_pw)
+        setContentView(R.layout.activity_enter_change_pw)
     }
 }

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Entire -->
+    <LinearLayout
+        android:id="@+id/linear_entire_end_corona"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/common_padding">
+
+        <!-- Top -->
+        <LinearLayout
+            android:id="@+id/linear_top_end_corona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/title_and_btn_margin_bottom_sign_up_and_log_in"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_big_title_end_corona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans_cjkkr_bold"
+                android:text="@string/end_corona_tv_big_title"
+                android:textColor="@color/black_87"
+                android:textSize="@dimen/end_corona_tv_big_size" />
+
+            <TextView
+                android:id="@+id/tv_small_title_end_corona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/radius_corner_margin_bottom"
+                android:text="@string/end_corona_tv_small_title"
+                android:textColor="@color/warm_grey_radius_corner_and_tv"
+                android:textSize="@dimen/end_corona_tv_small_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="@color/pinkish_grey" />
+        </LinearLayout>
+
+        <!-- Calender -->
+        <!--        <DatePicker-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"/>-->
+
+
+        <CalendarView
+            android:id="@+id/calendar_end_corona"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusedMonthDateColor="@color/light_purple"
+            android:unfocusedMonthDateColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_log_in"
+            android:layout_width="@dimen/btn_sign_up_weight"
+            android:layout_height="@dimen/btn_sign_up_height"
+            android:layout_gravity="center"
+            android:background="@drawable/gradient_btn_common"
+            android:fontFamily="@font/noto_sans_cjkkr_bold"
+            android:gravity="center"
+            android:text="@string/log_in_gradient_btn"
+            android:textSize="@dimen/gradient_btn_text_size" />
+
+    </LinearLayout>
+</layout>
