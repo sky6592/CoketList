@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/group_15" />
+
+        <EditText
+            android:id="@+id/et_nick_name_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="10dp"
+            android:hint="@string/sign_up_nick_name" />
+
+        <EditText
+            android:id="@+id/et_nick_name_enter_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="10dp"
+            android:hint="@string/sign_up_enter_email" />
+
+        <EditText
+            android:id="@+id/et_nick_name_enter_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="10dp"
+            android:hint="@string/sign_up_enter_pw" />
+
+        <EditText
+            android:id="@+id/et_nick_name_re_enter_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="10dp"
+            android:hint="@string/sign_up_re_enter_pw" />
+
+        <ImageButton
+            android:id="@+id/img_btn_log_in"
+            android:layout_width="@dimen/btn_log_in_weight"
+            android:layout_height="@dimen/btn_log_in_height"
+            android:layout_gravity="center"
+            android:background="@drawable/group_8" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom"
+            android:id="@+id/tv_log_in"
+            android:layout_weight="1"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/tv_log_in"
+            android:text="@string/sign_up_tv_personal_information"/>
+        <!--        폰트파일 달라고 하기!-->
+        <!--        android:fontFamily="@font/noto_sans_cjkkr"-->
+
+
+    </LinearLayout>
+</layout>

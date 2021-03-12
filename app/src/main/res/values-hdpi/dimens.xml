@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Log In화 -->
+    <dimen name="tv_log_in">13sp</dimen>
+    <dimen name="btn_log_in_weight">320dp</dimen>
+    <dimen name="btn_log_in_height">44dp</dimen>
+
+</resources>
