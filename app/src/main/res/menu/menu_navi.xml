@@ -3,15 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/menu_mycoket"
+        android:id="@+id/menu_my_coket"
         android:enabled="true"
+        android:icon="@drawable/menu_navi_my_coket_selector"
         android:title="@string/menu_coket"
         app:showAsAction="ifRoom" />
-
 
     <item
         android:id="@+id/menu_space"
         android:enabled="true"
+        android:icon="@drawable/menu_navi_space_selector"
         android:title="@string/menu_coket"
         app:showAsAction="ifRoom" />
 </menu>

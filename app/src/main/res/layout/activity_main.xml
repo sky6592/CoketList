@@ -19,7 +19,7 @@
             android:id="@+id/main_navi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            app:labelVisibilityMode="unlabeled"
             app:menu="@menu/menu_navi" />
 
     </LinearLayout>
