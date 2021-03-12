@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/radius_corner"
+    android:shape="rectangle">
+    <solid android:color="@color/white" />
+    <stroke android:color="@color/warn_grey_radius_corner_and_tv"
+        android:width="@dimen/radius_corner_stroke"/>
+    <corners
+        android:bottomLeftRadius="@dimen/radius_corner"
+        android:bottomRightRadius="@dimen/radius_corner"
+        android:topLeftRadius="@dimen/radius_corner"
+        android:topRightRadius="@dimen/radius_corner" />
+</shape>

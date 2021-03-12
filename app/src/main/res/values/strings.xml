@@ -2,7 +2,7 @@
     <string name="app_name">coketlist</string>
 
     <!--  회원가입 화면  -->
-    <string name="sign_up_nick_name">닉네임 1~8</string>
+    <string name="sign_up_nick_name">닉네임 1~8자</string>
     <string name="sign_up_enter_email">이메일을 입력해 주세요</string>
     <string name="sign_up_enter_pw">비밀번호 4-16자</string>
     <string name="sign_up_re_enter_pw">비밀번호를 한번 더 입력해 주세요</string>
