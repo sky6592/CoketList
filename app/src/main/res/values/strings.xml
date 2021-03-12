@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">coketlist</string>
 
-    <!--  회원가입 화면  -->
+    <!-- Log In -->
+    <string name="log_in_tv_sign_up">회원가입</string>
+    <string name="log_in_tv_find_pw">비밀번호 찾기</string>
+    <string name="log_in_gradient_btn">로그인</string>
+
+    <!--  Sign UP  -->
     <string name="sign_up_nick_name">닉네임 1~8자</string>
     <string name="sign_up_enter_email">이메일을 입력해 주세요</string>
     <string name="sign_up_enter_pw">비밀번호 4-16자</string>
@@ -11,4 +16,21 @@
         이용약관에 동의하는 것으로 간주합니다.
     </string>
     <string name="sign_up_tv_title">회원가입</string>
+
+    <!-- Find Pw -->
+    <string name="find_pw_tv_info">
+        가입하신 이메일을 입력해주세요.\n
+        비밀번호 재설정 메일이 발송됩니다.
+   </string>
+    <string name="find_pw_gradient_btn">발송하기</string>
+
+    <!-- Enter Email pw -->
+    <string name="enter_email_pw_title">비밀번호 재설정</string>
+    <string name="enter_email_pw_tv_info">메일에 적힌 비밀번호를 입력해주세요</string>
+    <string name="enter_email_pw_gradient_btn">완료</string>
+
+<!-- menu bottom navigation -->
+    <string name="menu_coket">나의 코킷</string>
+    <string name="menu_space">둘러보기</string>
+
 </resources>

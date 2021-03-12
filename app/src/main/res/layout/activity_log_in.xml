@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Entire -->
+    <LinearLayout
+        android:id="@+id/linear_entire_log_in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/common_padding">
+
+        <!-- logo -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/logo_margin_vertical_log_in"
+            android:src="@drawable/group_15" />
+
+        <LinearLayout
+            android:id="@+id/linear_enter_info_log_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_nick_name_enter_email_log_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/radius_corner_margin_bottom"
+                android:background="@drawable/radius_corner_grey_stroke"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="@dimen/radius_corner"
+                android:fontFamily="@font/noto_sans_cjkkr_regular"
+                android:hint="@string/sign_up_enter_email"
+                android:paddingHorizontal="@dimen/radius_corner_et_padding_horizontal"
+                android:paddingVertical="@dimen/radius_corner_et_padding_vertical"
+                android:textSize="@dimen/radius_corner_et_text_size" />
+
+            <EditText
+                android:id="@+id/et_nick_name_enter_pw_log_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/title_and_btn_margin_bottom_sign_up_and_log_in"
+                android:background="@drawable/radius_corner_grey_stroke"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="@dimen/radius_corner"
+                android:fontFamily="@font/noto_sans_cjkkr_regular"
+                android:hint="@string/sign_up_enter_pw"
+                android:paddingHorizontal="@dimen/radius_corner_et_padding_horizontal"
+                android:paddingVertical="@dimen/radius_corner_et_padding_vertical"
+                android:textSize="@dimen/radius_corner_et_text_size" />
+
+            <Button
+                android:id="@+id/btn_log_in"
+                android:layout_width="@dimen/btn_sign_up_weight"
+                android:layout_height="@dimen/btn_sign_up_height"
+                android:layout_gravity="center"
+                android:background="@drawable/gradient_btn_common"
+                android:fontFamily="@font/noto_sans_cjkkr_bold"
+                android:gravity="center"
+                android:text="@string/log_in_gradient_btn"
+                android:textSize="@dimen/gradient_btn_text_size" />
+
+
+        </LinearLayout>
+
+        <!-- Bottom -->
+        <LinearLayout
+            android:id="@+id/linear_bottom_log_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_sign_up_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/noto_sans_cjkkr_medium"
+                android:lineSpacingExtra="4sp"
+                android:textColor="#de000000"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:text="@string/log_in_tv_sign_up" />
+
+            <TextView
+                android:id="@+id/tv_find_pw_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/noto_sans_cjkkr_medium"
+                android:lineSpacingExtra="4sp"
+                android:textColor="#de000000"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:text="@string/log_in_tv_find_pw" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

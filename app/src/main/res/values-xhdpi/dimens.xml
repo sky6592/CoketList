@@ -7,19 +7,34 @@
     <!-- Common title -->
     <dimen name="title_linear_height_sign_up_">56dp</dimen>
     <dimen name="title_tv_sign_up">14sp</dimen>
-    <dimen name="title_and_btn_margin_bottom_sign_up_">40dp</dimen>
+    <dimen name="title_and_btn_margin_bottom_sign_up_and_log_in">40dp</dimen>
 
     <!-- Common radius corner -->
     <dimen name="radius_corner">10dp</dimen>
     <dimen name="radius_corner_stroke">2px</dimen>
     <dimen name="radius_corner_padding">5dp</dimen>
     <dimen name="radius_corner_margin_bottom">15dp</dimen>
+    <dimen name="radius_corner_et_text_size">14sp</dimen>
+    <dimen name="radius_corner_et_padding_horizontal">20dp</dimen>
+    <dimen name="radius_corner_et_padding_vertical">5dp</dimen>
+
+
+    <!-- Common gradient btn -->
+    <dimen name="gradient_btn_radius_corner">30dp</dimen>
+    <dimen name="gradient_btn_text_size">14sp</dimen>
+
+    <!-- Log In -->
+    <dimen name="logo_margin_vertical_log_in">124dp</dimen>
 
     <!-- Sign UP-->
+
     <dimen name="tv_personal_sign_up">13sp</dimen>
     <dimen name="btn_sign_up_weight">320dp</dimen>
     <dimen name="btn_sign_up_height">44dp</dimen>
     <dimen name="linear_sign_up_weight">360dp</dimen>
     <dimen name="linear_enter_info_padding">20dp</dimen>
+
+    <!-- Find Pw -->
+    <dimen name="tv_info_find_pw">20sp</dimen>
 
 </resources>

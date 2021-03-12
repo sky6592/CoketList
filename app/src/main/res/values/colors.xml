@@ -9,6 +9,10 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- 공통 -->
-    <color name="warn_grey_radius_corner_and_tv">#979797</color>
+    <color name="warm_grey_radius_corner_and_tv">#979797</color>
+
+    <!-- gradient btn -->
+    <color name="light_purple">#dbceff</color>
+    <color name="main_purple">#793aff</color>
 
 </resources>

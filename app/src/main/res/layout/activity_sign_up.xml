@@ -5,6 +5,7 @@
 
     <!-- entire -->
     <LinearLayout
+        android:id="@+id/linear_entire_sign_up"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -14,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/title_linear_height_sign_up_"
-            android:layout_marginBottom="@dimen/title_and_btn_margin_bottom_sign_up_"
+            android:layout_marginBottom="@dimen/title_and_btn_margin_bottom_sign_up_and_log_in"
             android:orientation="horizontal">
 
             <ImageButton
@@ -40,6 +41,7 @@
 
         <!-- Content -->
         <LinearLayout
+            android:id="@+id/linear_content_sign_up"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -51,62 +53,73 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+<!-- 사람 아이콘 바꿔야한다! -->
                 <EditText
-                    android:id="@+id/et_nick_name_sign_up"
+                    android:id="@+id/et_nick_name_sign_up_sign_up"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/radius_corner_margin_bottom"
                     android:background="@drawable/radius_corner_grey_stroke"
-                    android:drawableLeft="@drawable/email"
+                    android:drawableLeft="@drawable/ic_person"
                     android:drawablePadding="@dimen/radius_corner"
                     android:fontFamily="@font/noto_sans_cjkkr_regular"
                     android:hint="@string/sign_up_nick_name"
-                    android:paddingHorizontal="20dp" />
+                    android:paddingHorizontal="@dimen/radius_corner_et_padding_horizontal"
+                    android:paddingVertical="@dimen/radius_corner_et_padding_vertical"
+                    android:textSize="@dimen/radius_corner_et_text_size" />
 
                 <EditText
-                    android:id="@+id/et_nick_name_enter_email"
+                    android:id="@+id/et_enter_email_sign_up"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/radius_corner_margin_bottom"
                     android:background="@drawable/radius_corner_grey_stroke"
-                    android:drawableLeft="@drawable/email"
+                    android:drawableLeft="@drawable/ic_email"
                     android:drawablePadding="@dimen/radius_corner"
                     android:fontFamily="@font/noto_sans_cjkkr_regular"
                     android:hint="@string/sign_up_enter_email"
-                    android:paddingHorizontal="20dp" />
+                    android:paddingHorizontal="@dimen/radius_corner_et_padding_horizontal"
+                    android:paddingVertical="@dimen/radius_corner_et_padding_vertical"
+                    android:textSize="@dimen/radius_corner_et_text_size" />
 
                 <EditText
-                    android:id="@+id/et_nick_name_enter_pw"
+                    android:id="@+id/et_enter_pw_sign_up"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/radius_corner_margin_bottom"
                     android:background="@drawable/radius_corner_grey_stroke"
-                    android:drawableLeft="@drawable/email"
+                    android:drawableLeft="@drawable/ic_lock"
                     android:drawablePadding="@dimen/radius_corner"
                     android:fontFamily="@font/noto_sans_cjkkr_regular"
                     android:hint="@string/sign_up_enter_pw"
-                    android:paddingHorizontal="20dp" />
+                    android:paddingHorizontal="@dimen/radius_corner_et_padding_horizontal"
+                    android:paddingVertical="@dimen/radius_corner_et_padding_vertical"
+                    android:textSize="@dimen/radius_corner_et_text_size" />
 
                 <EditText
-                    android:id="@+id/et_nick_name_re_enter_pw"
+                    android:id="@+id/et_re_enter_pw_sign_up"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/title_and_btn_margin_bottom_sign_up_"
+                    android:layout_marginBottom="@dimen/title_and_btn_margin_bottom_sign_up_and_log_in"
                     android:background="@drawable/radius_corner_grey_stroke"
-                    android:drawableLeft="@drawable/email"
+                    android:drawableLeft="@drawable/ic_lock"
                     android:drawablePadding="@dimen/radius_corner"
                     android:fontFamily="@font/noto_sans_cjkkr_regular"
                     android:hint="@string/sign_up_re_enter_pw"
-                    android:paddingHorizontal="20dp" />
+                    android:paddingHorizontal="@dimen/radius_corner_et_padding_horizontal"
+                    android:paddingVertical="@dimen/radius_corner_et_padding_vertical"
+                    android:textSize="@dimen/radius_corner_et_text_size" />
             </LinearLayout>
 
 
-            <ImageButton
-                android:id="@+id/img_btn_log_in"
+            <Button
+                android:id="@+id/btn_start_sign_up"
                 android:layout_width="@dimen/btn_sign_up_weight"
                 android:layout_height="@dimen/btn_sign_up_height"
                 android:layout_gravity="center"
-                android:background="@drawable/group_8" />
+                android:background="@drawable/gradient_btn_common"
+                android:text="@string/find_pw_gradient_btn"
+                android:textSize="@dimen/gradient_btn_text_size" />
 
             <TextView
                 android:id="@+id/tv_log_in"
@@ -115,7 +128,7 @@
                 android:layout_weight="1"
                 android:gravity="center_horizontal|bottom"
                 android:text="@string/sign_up_tv_personal_information"
-                android:textColor="@color/warn_grey_radius_corner_and_tv"
+                android:textColor="@color/warm_grey_radius_corner_and_tv"
                 android:textSize="@dimen/tv_personal_sign_up" />
             <!--        폰트파일 달라고 하기!-->
             <!--        android:fontFamily="@font/noto_sans_cjkkr"-->
