@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="activity"
+            type="com.endcorona.coketlist.ui.signup.SignUpActivity" />
+    </data>
+
 
     <!-- Entire -->
     <LinearLayout
@@ -27,7 +34,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:background="@drawable/ic_baseline_close_24" />
+                android:background="@drawable/ic_baseline_close_24"
+                android:onClick="closePage" />
 
             <TextView
                 android:id="@+id/tv_title_sign_up"
@@ -37,7 +45,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/noto_sans_cjkkr_medium"
                 android:gravity="center"
-                android:text="@string/enter_change_pw_title"
+                android:text="@string/sign_up_tv_title"
                 android:textColor="@color/black"
                 android:textSize="@dimen/title_tv_sign_up" />
 
@@ -95,6 +103,7 @@
                     android:drawablePadding="@dimen/radius_corner_drawable_padding"
                     android:fontFamily="@font/noto_sans_cjkkr_regular"
                     android:hint="@string/sign_up_enter_pw"
+                    android:inputType="textPassword"
                     android:paddingHorizontal="@dimen/radius_corner_et_padding_horizontal"
                     android:paddingVertical="@dimen/radius_corner_et_padding_vertical"
                     android:textSize="@dimen/radius_corner_et_text_size" />
@@ -109,6 +118,7 @@
                     android:drawablePadding="@dimen/radius_corner_drawable_padding"
                     android:fontFamily="@font/noto_sans_cjkkr_regular"
                     android:hint="@string/sign_up_re_enter_pw"
+                    android:inputType="textPassword"
                     android:paddingHorizontal="@dimen/radius_corner_et_padding_horizontal"
                     android:paddingVertical="@dimen/radius_corner_et_padding_vertical"
                     android:textSize="@dimen/radius_corner_et_text_size" />
@@ -121,7 +131,10 @@
                 android:layout_height="@dimen/btn_sign_up_height"
                 android:layout_gravity="center"
                 android:background="@drawable/gradient_btn_common"
+                android:fontFamily="@font/noto_sans_cjkkr_bold"
+                android:onClick="pressSignUP"
                 android:text="@string/find_pw_gradient_btn"
+                android:textColor="@color/white"
                 android:textSize="@dimen/gradient_btn_text_size" />
 
             <TextView

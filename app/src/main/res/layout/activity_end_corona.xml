@@ -66,6 +66,7 @@
             android:background="@drawable/gradient_btn_common"
             android:fontFamily="@font/noto_sans_cjkkr_bold"
             android:gravity="center"
+            android:textColor="@color/white"
             android:text="@string/log_in_gradient_btn"
             android:textSize="@dimen/gradient_btn_text_size" />
 

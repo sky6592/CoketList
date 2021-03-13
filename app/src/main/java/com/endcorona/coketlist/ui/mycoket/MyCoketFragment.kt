@@ -1,5 +1,6 @@
 package com.endcorona.coketlist.ui.mycoket
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,6 +30,10 @@ class MyCoketFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
+        mBinding.ivAddMyCoket.setOnClickListener {
+            startActivity(Intent(context,WriteListActivity::class.java))
+        }
     }
 
 

@@ -24,7 +24,7 @@
     <dimen name="gradient_btn_text_size">14sp</dimen>
 
     <!-- Log In -->
-    <dimen name="logo_margin_vertical_log_in">124dp</dimen>
+    <dimen name="logo_margin_vertical_log_in">110dp</dimen>
 
     <!-- Sign UP-->
     <dimen name="tv_personal_sign_up">13sp</dimen>

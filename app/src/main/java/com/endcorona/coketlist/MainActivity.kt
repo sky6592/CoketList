@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         mBinding.mainNavi.itemIconTintList = null
 
 
+        //Bottom navigation
         mBinding.mainNavi.run {
             setOnNavigationItemSelectedListener {
                 when (it.itemId) {

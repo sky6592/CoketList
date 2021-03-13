@@ -80,6 +80,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/gradient_btn_common"
                 android:text="@string/enter_change_pw_gradient_btn"
+                android:textColor="@color/white"
                 android:textSize="@dimen/gradient_btn_text_size" />
         </LinearLayout>
     </LinearLayout>

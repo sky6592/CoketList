@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linear_entire_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- content -->
+        <LinearLayout
+            android:id="@+id/linear_content_item_my_coket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/noto_sans_cjkkr_medium"
+                android:padding="5dp"
+                android:text="마스크 없이 디자인, 코딩하기!"
+                android:textColor="@color/black_87"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_share_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_share" />
+
+            <ImageView
+                android:id="@+id/iv_trash_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_trash" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="@color/pinkish_grey"
+            app:layout_constraintBottom_toBottomOf="@id/linear_content_item_my_coket" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

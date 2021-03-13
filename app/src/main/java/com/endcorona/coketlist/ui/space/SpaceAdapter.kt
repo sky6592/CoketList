@@ -27,7 +27,9 @@ class SpaceAdapter(val spaceModelList: ArrayList<SpaceModel>) :
         return SpaceViewHolder(binding)
     }
 
-    override fun getItemCount(): Int = mData.size
+    override fun getItemCount(): Int {
+        return mData.size
+    }
 
     //when use to Scroll => 실행한다 onvBindViewHolder가!
     override fun onBindViewHolder(holder: SpaceViewHolder, position: Int) {

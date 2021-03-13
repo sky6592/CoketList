@@ -38,6 +38,8 @@
 
     <!-- Write List -->
     <color name="white_write_list">#f2f2f2</color>
+    <color name="blue_purple">#5200ff</color>
+
 
 
 </resources>
